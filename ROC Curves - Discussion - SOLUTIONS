@@ -1,0 +1,24 @@
+1. Discuss the limitations of ROC curves and potential alternatives, such as precision-recall curves, when dealing with imbalanced datasets or specific problem contexts. 
+“ROC curves do not provide a single, easy-to-interpret metric for classifier performance. Instead, they require the examination of the entire curve to understand the
+trade-off between sensitivity and specificity. ROC curves can be misleading when dealing with imbalanced datasets, as they may show high AUC values even if the classifier
+performs poorly on the minority class. In such cases, precision-recall curves might be a better alternative.” -Dhari
+
+“Precision-recall curves are a popular alternative to ROC curves when dealing with imbalanced datasets. Precision is the proportion of true positive predictions among all
+positive predictions (TP / (TP + FP)), while recall is the same as sensitivity (TP / (TP + FN)). Precision-recall curves plot recall (x-axis) against precision (y-axis) 
+at different decision thresholds. The Area Under the Precision-Recall Curve (AUPRC) can be used to evaluate classifier performance, with higher values indicating better 
+performance.” -Lakshmi
+
+2. Share your experiences and thoughts on the appropriate choice of evaluation techniques and performance metrics for different scenarios.
+“Imbalanced datasets: In cases where the dataset is imbalanced, precision-recall curves and the AUPRC metric are more appropriate, as they focus more on the
+performance of the classifier on the minority class.
+
+Cost-sensitive problems: In some scenarios, false positives and false negatives may have different costs associated with them. In such cases, 
+it is important to choose performance metrics that take these costs into account. For instance, the F1-score, which is the harmonic mean of precision and recall,
+can be used to balance the trade-off between false positives and false negatives.
+
+Multi-class problems: When dealing with multi-class classification, it is necessary to adapt binary classification metrics to handle multiple classes. 
+For example, using one-versus-rest or one-versus-one approaches, ROC curves can be extended to multi-class settings. Similarly, macro- and micro-averaging
+techniques can be employed to compute precision, recall, and F1-score for multi-class problems.”
+-Esha
+
+*In conclusion, the choice of evaluation techniques and performance metrics depends on the specific problem context, the nature of the dataset, and the costs associated with different types of misclassifications. It is crucial to carefully consider these factors when selecting an appropriate evaluation method to ensure a fair and accurate assessment of classifier performance.
