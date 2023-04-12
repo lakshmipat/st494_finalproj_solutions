@@ -1,0 +1,32 @@
+Lesson Discussion
+Share your experiences with the hands-on exercises. Discuss the results and the implications of different threshold values, ROC and PR curves, and AUC values.
+		
+“During the hands-on exercises, we experimented with different threshold values for the classification model and observed the trade-offs between false positives
+and false negatives. We also generated both ROC and PR curves for a binary classification problem and compared the AUC values to analyze the model's performance. 
+The exercises provided valuable insights into how varying thresholds and using different evaluation techniques can impact the model's performance.” -Dhari 
+		
+“The results of the exercises demonstrated that the choice of threshold value directly affects the balance between false positives and false negatives.
+In some problem contexts, minimizing false positives might be more important than minimizing false negatives, or vice versa. This implies that selecting an
+appropriate threshold value is crucial for maximizing the chosen performance metric or achieving a desirable balance between false positives and false 
+negatives.” -Lakshmi
+
+“ROC and PR curves, along with their AUC values, help us visualize and quantify the model's ability to differentiate between classes. The ROC curve is more 
+informative when the classes are balanced or when the costs of false positives and false negatives are similar. In contrast, the PR curve is more informative 
+when the classes are imbalanced or when the costs of false positives and false negatives are significantly different. By comparing AUC values, we can assess 
+the overall performance of the model and make informed decisions about model selection and optimization.” -Esha
+
+Brainstorm potential real-world applications where the choice of evaluation technique and performance metric is particularly critical. Discuss the factors to consider when making these choices.
+“Medical diagnostics: In medical diagnostic tasks, such as predicting the presence of a disease, the cost of false negatives (failing to detect the disease)
+can be significantly higher than the cost of false positives. In such cases, prioritizing sensitivity (recall) over precision might be critical, and using 
+the PR curve for evaluation might be more appropriate.” -Dhari
+
+“Fraud detection: In financial fraud detection, false positives (flagging legitimate transactions as fraudulent) can lead to customer
+dissatisfaction, while false negatives (failing to detect actual fraud) can result in financial losses. The choice of evaluation technique
+and performance metric should be based on the balance between these costs and the prevalence of fraud in the data.” -Lakshmi
+
+“Spam email filtering: In this context, false positives (filtering legitimate emails as spam) can be more costly than false negatives
+(letting spam emails through). The evaluation technique and performance metric should focus on minimizing false positives while maintaining
+an acceptable level of false negatives.” -Esha
+
+*In each of these applications, it's important to consider the specific problem context, the balance between classes, and the costs of false
+positives and false negatives when choosing evaluation techniques and performance metrics.
