@@ -1,0 +1,15 @@
+1. A binary classification model was trained to predict if a customer will purchase a product or not. The dataset contains 90% negative samples and 10% positive samples. Which curve, ROC or Precision-Recall, would be more suitable for evaluating the model's performance? Why?
+
+“A Precision-Recall curve would be more suitable for evaluating the model's performance in this scenario. This is because the dataset is imbalanced, with a small number of positive samples (10%) relative to the negative samples (90%). Precision-Recall curves are more sensitive
+to class imbalance and provide a better understanding of the trade-offs between precision and recall, which is particularly useful when false positives are more costly or when minimizing false positives is a priority.” -Dhari
+
+2. A company wants to evaluate the performance of two classifiers for a marketing campaign. The dataset contains an equal number of positive and negative samples. Which curve, ROC or Precision-Recall, should be used to compare the performance of the classifiers? Why?
+
+“An ROC curve should be used to compare the performance of the classifiers in this case. Since the dataset is balanced with an equal number of positive and negative samples, the ROC curve is more appropriate as it takes into account both false positives and false negatives.
+ROC curves are particularly useful for evaluating classifier performance when both types of errors are important to consider, and they provide a good visual representation of the trade-off between true positive rate and false positive rate across various decision thresholds.” -Lakshmi
+
+3. A loan default prediction model was developed to predict if a loan applicant will default on their loan or not. The dataset contains 70% negative samples and 30% positive samples. Which curve, ROC or Precision-Recall, would be more suitable for evaluating the model's performance? Why?
+
+“A Precision-Recall curve would be more suitable for evaluating the model's performance in this scenario. Although the dataset is not as severely imbalanced as in the first example, the imbalance still exists, with a smaller number of positive samples (30%) relative to the negative samples 
+(70%). In this case, false positives (incorrectly predicting a loan applicant will default) may be more costly than false negatives (incorrectly predicting a loan applicant will not default). Precision-Recall curves provide a better understanding of the trade-offs between precision and recall,
+which can help in evaluating the classifier performance, particularly when dealing with imbalanced datasets or when false positives are more costly.” -Esha
