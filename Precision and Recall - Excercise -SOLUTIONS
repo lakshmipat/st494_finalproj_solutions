@@ -1,0 +1,38 @@
+Excersise Questions - Solutions
+
+1. What are Precision-Recall curves, and why are they important in evaluating classifier performance?
+
+“Precision-Recall curves are graphical representations of the relationship between precision and recall at different
+decision thresholds. They are important in evaluating classifier performance, particularly in cases where the dataset
+is imbalanced, as they provide better insights into the trade-offs between precision and recall, helping to make informed
+decisions on the optimal threshold for the classifier.” -Dhari
+
+2.  What is the difference between precision and recall, and how are they calculated?
+
+“Precision is the ratio of true positive cases to all instances predicted as positive by the model.
+It is calculated as follows: Precision = TP / (TP + FP). Recall, also known as sensitivity or the
+True Positive Rate (TPR), is the measure of a model correctly identifying true positives. It is calculated
+as follows: Recall = TP / (TP + FN).” -Lakshmi
+
+3.  How do you plot a Precision-Recall curve, and what does a perfect classifier's curve look like?
+
+“To plot a Precision-Recall curve, you need to calculate precision and recall values for different
+decision thresholds, then plot precision (y-axis) against recall (x-axis). A perfect classifier's
+Precision-Recall curve would pass through the top-right corner of the plot (precision = 1 and recall = 1),
+indicating that it can correctly classify all positive cases without any false positives.” -Esha
+
+4. Can a classifier have perfect precision and recall at the same time? Explain.
+
+“In practice, most classifiers exhibit a trade-off between precision and recall. However,
+theoretically, it is possible for a classifier to have perfect precision and recall if it can
+correctly classify all positive cases without any false positives or false negatives. This would
+mean that the classifier perfectly separates the classes, which is an ideal scenario that is rarely
+achievable with real-world data.” -Dhari
+
+5. Can average precision be used to compare performance of two different classifiers on the same dataset? 
+
+“Yes, average precision can be used to compare the performance of two different classifiers on the same dataset.
+The average precision is the weighted mean of precisions achieved at each threshold, with the increase in recall
+from the previous threshold used as the weight. A higher average precision indicates better classifier performance, 
+so you can use this metric to compare the effectiveness of different classifiers in handling the trade-offs between 
+precision and recall.” -Lakshmi
